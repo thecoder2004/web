@@ -1,5 +1,6 @@
 @import "./nav.css";
 @import "./grid.css";
+@import "./watch.css";
 
 .layout__container {
   background-color: var(--n-600);
