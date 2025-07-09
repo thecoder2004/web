@@ -5,11 +5,11 @@
   gap: 10px;
 }
 .layout__nav {
-  width: minmax(200px, 20%);
+  width: minmax(300px, 20%);
   background-color: var(--n-800);
   position: sticky;
   top: var(--header-height);
-
+  flex-shrink: 0;
   /* Rất quan trọng: Sidebar cần có chiều cao để "biết" nó phải dính trong bao lâu */
   height: calc(100vh - var(--header-height));
 }

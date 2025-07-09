@@ -31,8 +31,10 @@
 
         <img
           class="header__icon"
-          src="./assets//header_icon/youtube_icon.png"
+          id="icon_button"
+          src="./assets/header_icon/youtube_icon.png"
           alt="ảnh icon"
+          onclick="goHome()"
         />
       </div>
       <!-- Search input and search button -->
@@ -84,7 +86,7 @@
         </ul>
       </nav>
       <!-- Grid -->
-      <main class="layout__content">
+      <main id="main_page" class="layout__content hidden">
         <div class="content__title">Phim đề xuất cho bạn</div>
         <div class="content__description">
           Hãy lựa chọn bộ phim bạn yêu thích và sau đó <br />
@@ -253,6 +255,78 @@
             </div>
             <div class="video_item_author">Blender Foundation</div>
             <div class="video_upload_time">1.5M lượt xem • 5 năm trước</div>
+          </div>
+        </div>
+      </main>
+      <!-- Play video page -->
+      <main id="watch_page" class="layout__content">
+        <div class="play__video">
+          <div class="play__video_item_main">
+            <video
+              class="video-player"
+              src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+              poster="./assets/youtube_icon.png"
+              controls
+            ></video>
+            <div class="video_item_title">
+              Big Buck Bunny: Chú thỏ tinh nghịch
+            </div>
+            <div class="video_item_author">Blender Foundation</div>
+          </div>
+          <div class="play__next_video">
+            <div class="play__next_video_title">Đề xuất cho bạn</div>
+            <div class="play__next_video_list">
+              <div class="play__next_video_item">
+                <video
+                  class="video-player"
+                  src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                  poster="./assets/youtube_icon.png"
+                  controls
+                ></video>
+                <div class="video_item_title">
+                  Big Buck Bunny: Chú thỏ tinh nghịch
+                </div>
+                <div class="video_item_author">Blender Foundation</div>
+              </div>
+
+              <div class="play__next_video_item">
+                <video
+                  class="video-player"
+                  src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                  poster="./assets/youtube_icon.png"
+                  controls
+                ></video>
+                <div class="video_item_title">
+                  Big Buck Bunny: Chú thỏ tinh nghịch
+                </div>
+                <div class="video_item_author">Blender Foundation</div>
+              </div>
+
+              <div class="play__next_video_item">
+                <video
+                  class="video-player"
+                  src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                  poster="./assets/youtube_icon.png"
+                  controls
+                ></video>
+                <div class="video_item_title">
+                  Big Buck Bunny: Chú thỏ tinh nghịch
+                </div>
+                <div class="video_item_author">Blender Foundation</div>
+              </div>
+              <div class="play__next_video_item">
+                <video
+                  class="video-player"
+                  src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                  poster="./assets/youtube_icon.png"
+                  controls
+                ></video>
+                <div class="video_item_title">
+                  Big Buck Bunny: Chú thỏ tinh nghịch
+                </div>
+                <div class="video_item_author">Blender Foundation</div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
