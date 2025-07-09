@@ -10,7 +10,9 @@
   padding: 0 24px;
   flex-shrink: 0; /* Không cho sidebar co lại */
   position: sticky;
+  box-shadow: 0px 5px 15px var(--n-900);
   top: 0;
+  z-index: 100;
 }
 
 .header__nav_and_icon {

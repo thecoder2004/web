@@ -12,6 +12,7 @@
   flex-shrink: 0;
   /* Rất quan trọng: Sidebar cần có chiều cao để "biết" nó phải dính trong bao lâu */
   height: calc(100vh - var(--header-height));
+  box-shadow: 5px 0px 15px var(--n-900);
 }
 .layout__nav_item {
   display: flex;
