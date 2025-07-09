@@ -1,0 +1,65 @@
+.content__title {
+  text-align: center;
+  padding: 2px;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 2px var(--n-900);
+}
+.content__description {
+  text-align: center;
+  padding: 2px;
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px var(--n-900);
+}
+.layout__content {
+  flex-grow: 1;
+  padding: 30px;
+  padding-bottom: 10px;
+  padding-top: var(--header-height);
+  overflow-y: auto;
+}
+
+.content__video_item {
+  width: 360px;
+  height: 360px;
+  background-color: var(--n-500);
+  padding: 20px;
+  border-radius: 10px;
+  top: 10%;
+  box-shadow: 4px 4px 4px -2px var(--n-800), -4px -4px 4px -2px var(--n-400);
+  flex-basis: 300px; /* Chiều rộng cơ sở của mỗi thẻ */
+  flex-grow: 1; /* Cho phép thẻ giãn ra để lấp đầy không gian */
+}
+.content__video_item:hover {
+  box-shadow: 8px 8px 8px -2px var(--n-800), -8px -8px 8px -2px var(--n-400);
+}
+
+.video-player {
+  width: 100%;
+  height: 70%;
+}
+.content__video_list {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-content: center;
+  gap: 24px;
+}
+.video_item_title {
+  font-weight: bold;
+  white-space: nowrap; /* 1. Ngăn không cho chữ xuống dòng */
+  overflow: hidden; /* 2. Ẩn đi phần chữ bị tràn ra ngoài */
+  text-overflow: ellipsis; /* 3. Hiển thị dấu "..." ở cuối */
+}
+
+.video_item_author {
+  white-space: nowrap; /* 1. Ngăn không cho chữ xuống dòng */
+  overflow: hidden; /* 2. Ẩn đi phần chữ bị tràn ra ngoài */
+  text-overflow: ellipsis; /* 3. Hiển thị dấu "..." ở cuối */
+}
+
+.video_upload_time {
+  margin-bottom: 10px;
+  white-space: nowrap; /* 1. Ngăn không cho chữ xuống dòng */
+  overflow: hidden; /* 2. Ẩn đi phần chữ bị tràn ra ngoài */
+  text-overflow: ellipsis; /* 3. Hiển thị dấu "..." ở cuối */
+}

@@ -1,0 +1,14 @@
+@import "./nav.css";
+@import "./grid.css";
+
+.layout__container {
+  background-color: var(--n-600);
+  width: 100%;
+  flex-shrink: 0;
+  height: 100vh;
+
+  display: flex;
+  color: white;
+  text-shadow: 1px 1px 2px var(--n-700);
+  top: var(--header-height);
+}

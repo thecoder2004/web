@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/******************
+     THEME 
+*******************/
+:root {
+  /*=============== 
+        COLORS 
+    =================*/
+  /* Primary colors */
+  --p-50: #fff0f0;
+  --p-100: #ffdddd;
+  --p-200: #ffc0c0;
+  --p-300: #ff9494;
+  --p-400: #ff5757;
+  --p-500: #ff2323;
+  --p-600: #ff0000; /* Main Red */
+  --p-700: #d7000d;
+  --p-800: #b10303;
+  --p-900: #920a0a;
+  --p-950: #500000;
+
+  /* Neutrals */
+  --n-50: #f7f8f9; /* hsl(210, 14%, 97%) */
+  --n-100: #edeff2; /* Lightest gray */
+  --n-200: #dce1e8;
+  --n-300: #bac1cc;
+  --n-400: #98a1b3; /* Light-medium gray */
+  --n-500: #6c7587; /* hsl(215, 16%, 47%) - Medium gray */
+  --n-600: #4d5566; /* hsl(215, 16%, 35%) */
+  --n-700: #444d60; /* Dark-medium gray */
+  --n-800: #3b4251;
+  --n-900: #23272e; /* Darkest gray */
+  --n-950: #1c1f26; /* Even darker */
+  --n-1000: #272935;
+  --foreground-color: hsl(0, 0%, 100%);
+
+  /* Gradients */
+  --main-gradient-color: linear-gradient(to right, var(--p-450), var(--p-500));
+  --gradient-color: linear-gradient(var(--foreground-color) 10%, var(--p-100));
+
+  /*================================= 
+        FONTS -  Sử dụng Scale 1.125
+    =================================*/
+  /* 32px */
+  --h1-font-size: 2rem;
+  /* 36px */
+  --h1-line-height: 2.25rem;
+
+  /* 26px */
+  --h2-font-size: 1.6rem;
+  /* 32px */
+  --h2-line-height: 2rem;
+
+  /* 20px */
+  --h3-font-size: 1.266rem;
+  /* 24px */
+  --h3-line-height: 1.5rem;
+
+  /* 18px */
+  --h4-font-size: 1.125rem;
+  /* 16px */
+  --h4-line-height: 1.5rem;
+
+  /* 16px */
+  --p-font-size: 1rem;
+  /* 24px */
+  --p-line-height: 1.5rem;
+
+  --p-letter-spacing: 0.025rem;
+
+  /* 12px */
+  --caption-font-size: 0.875rem;
+  /* 16px */
+  --caption-line-height: 1rem;
+  --header-height: 56px;
+}

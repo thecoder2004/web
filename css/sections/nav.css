@@ -1,0 +1,43 @@
+.layout__nav_list {
+  list-style: none;
+  padding: 0;
+  display: block;
+  gap: 10px;
+}
+.layout__nav {
+  width: minmax(200px, 20%);
+  background-color: var(--n-800);
+  position: sticky;
+  top: var(--header-height);
+
+  /* Rất quan trọng: Sidebar cần có chiều cao để "biết" nó phải dính trong bao lâu */
+  height: calc(100vh - var(--header-height));
+}
+.layout__nav_item {
+  display: flex;
+  align-items: center; /* Căn giữa icon và chữ theo chiều dọc */
+  gap: 20px; /* Khoảng cách giữa icon và chữ */
+  padding: 12px 16px;
+  cursor: pointer; /* Cho người dùng biết là có thể click */
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.layout__nav_item:hover {
+  background-color: var(--p-100);
+}
+.layout__nav_item:active {
+  background-color: var(--p-100);
+  border: 3px solid var(--p-700);
+}
+
+.layout__nav_item img {
+  width: 24px;
+  height: 24px;
+  filter: drop-shadow(0px 2px 2px var(--n-900));
+}
+.layout__nav_item p {
+  /* Các thuộc tính khác của p nếu có */
+  color: white;
+  text-shadow: 1px 1px 2px var(--n-700); /* ✨ Thêm dòng này ✨ */
+}
